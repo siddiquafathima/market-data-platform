@@ -4,7 +4,7 @@ A data-engineering project that ingests market data from several sources, checks
 
 > **Data note:** the demo and the test suite run on **synthetic data with deliberately planted defects**, so every check can be verified against a known answer. It is not real market data, and no result in this repository should be read as a real market statistic.
 
-![Quality report](docs/quality_report.png)
+![Quality report](docs/Quality report.png)
 
 ---
 
