@@ -1,0 +1,14 @@
+# Pipeline configuration. Override any key here; defaults live in src/mdp/config.py
+tickers: [AAPL, MSFT, NVDA, AMZN, GOOGL]
+wiki_articles:
+  AAPL: Apple_Inc.
+  MSFT: Microsoft
+  NVDA: Nvidia
+  AMZN: Amazon_(company)
+  GOOGL: Google
+thresholds:
+  jump_threshold: 0.25          # |daily return| above this is flagged
+  completeness_fail_ratio: 0.02 # missing-day ratio above this -> FAIL (any missing -> WARN)
+  freshness_sla_days: 3         # business days of lag allowed
+  attention_spike_z: 3.0        # Wikipedia pageview z-score treated as a spike
+  volume_spike_ratio: 2.0       # volume / 20d average treated as a spike
